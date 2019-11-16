@@ -1,0 +1,10 @@
+version: '3.2'
+
+services:
+  a-service:
+    image: 'a-service:latest'
+    restart: unless-stopped
+    ports:
+      - 3000:3000/tcp
+    environment:
+      NODE_ENV: development-docker
