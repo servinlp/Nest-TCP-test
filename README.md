@@ -9,13 +9,13 @@ A small project to explain the problem i'm having
 
 ## Situation
 
-_Expected behavior:_ Receive a response when running the app with and without docker
+**Expected behavior:** Receive a response when running the app with and without docker
 
-_What I got:_ A response when running the app without docker but not inside docker
+**What I got:** A response when running the app without docker but not inside docker
 
-_What I thing the problem could be:_ The app seems to be working inside docker but the port just not passing through correctly.
+**What I thing the problem could be:** The app seems to be working inside docker but the port just not passing through correctly.
 
-_What I already tried:_
+**What I already tried:**
 
 - Making a hybrid app. Make a GET request that is then internaly passed to the TCP microservice (this worked but is not the behavior I want).
 - Run `yarn start:dev` inside the docker container instead of `yarn start:prod`. This did nothing, but then again the ports both used where the same.
